@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nodemon": "^3.1.11",
+    "prompt-sync": "^4.2.0"
+  }
+}
