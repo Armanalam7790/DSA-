@@ -1,32 +1,32 @@
-let prompt  = require("prompt-sync")()
+// let prompt  = require("prompt-sync")()
 
-let age  =  Number(prompt('Enter Your Age : '))
+// let age  =  Number(prompt('Enter Your Age : '))
 
-if (age>=18) {
-    console.log('valid voter');
+// if (age>=18) {
+//     console.log('valid voter');
     
-}else  console.log('invalid voter');
+// }else  console.log('invalid voter');
 
-let marks  = Number(prompt("enter your marks :"))
+// let marks  = Number(prompt("enter your marks :"))
 
-if (marks>85 && marks<=95) console.log('Excellent');
-else if(marks>80 && marks<=85) console.log('very good');
-else if(marks>70 && marks <= 80) console.log('good');
-else console.log("fair");
+// if (marks>85 && marks<=95) console.log('Excellent');
+// else if(marks>80 && marks<=85) console.log('very good');
+// else if(marks>70 && marks <= 80) console.log('good');
+// else console.log("fair");
 
-//  Aceept two numbers and prints the greatest between them
-    let num1 = Number(prompt("first number :"))
-    let num2 = Number(prompt("second number :"))
+// //  Aceept two numbers and prints the greatest between them
+//     let num1 = Number(prompt("first number :"))
+//     let num2 = Number(prompt("second number :"))
 
-    if (num1>num2)console.log(`${num1} is greater`);
-    else if (num1<num2)console.log(`${num2} is greater`);
-    else console.log("Both numbers are equal");
+//     if (num1>num2)console.log(`${num1} is greater`);
+//     else if (num1<num2)console.log(`${num2} is greater`);
+//     else console.log("Both numbers are equal");
 
-//  Accept name and age from the user check whether it is even number or odd
+// //  Accept name and age from the user check whether it is even number or odd
 
-let n = Number(prompt("enter number : "))
-if (n%2==0)console.log('even number');
-else console.log('odd number');
+// let n = Number(prompt("enter number : "))
+// if (n%2==0)console.log('even number');
+// else console.log('odd number');
 
 //Accept three numbers and print thr greatest among them
 
@@ -130,35 +130,149 @@ else console.log('odd number');
 //counting number of days in a given month of a year
 
 
-let month = Number(prompt("Enter month (1-12): "));
-let year = Number(prompt("Enter year: "));
-let days;
+// let month = Number(prompt("Enter month (1-12): "));
+// let year = Number(prompt("Enter year: "));
+// let days;
 
-if (month === 2) {
+// if (month === 2) {
 
-    if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
-        days = 29;
-    } else {
-        days = 28;
-    }
+//     if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+//         days = 29;
+//     } else {
+//         days = 28;
+//     }
 
-} else if (
-    month === 1 || month === 3 || month === 5 ||
-    month === 7 || month === 8 || month === 10 ||
-    month === 12
-) {
-    days = 31;
+// } else if (
+//     month === 1 || month === 3 || month === 5 ||
+//     month === 7 || month === 8 || month === 10 ||
+//     month === 12
+// ) {
+//     days = 31;
 
-} else if (
-    month === 4 || month === 6 ||
-    month === 9 || month === 11
-) {
-    days = 30;
+// } else if (
+//     month === 4 || month === 6 ||
+//     month === 9 || month === 11
+// ) {
+//     days = 30;
 
-} else {
-    console.log("Invalid month");
+// } else {
+//     console.log("Invalid month");
+// }
+
+// if (days) {
+//     console.log("Number of days:", days);
+// }
+
+
+
+let prompt = require('prompt-sync')()
+
+
+// let marks  = +prompt('Enter Your Marks  ')
+
+
+// if (marks>= 85 && marks<= 95 ) console.log('Excellent');
+// else if(marks>= 80 && marks<= 85) console.log('very good');
+// else if(marks>= 70 && marks<= 80) console.log('good');
+// else console.log('fair');
+
+
+
+
+// let num1  = +prompt('Enter Number')
+// let num2  = +prompt('Enter Number')
+
+// if (num1> num2) {
+//     console.log(`${num1} is big as compare ${num2}`);
+    
+// }
+// else{
+//     console.log(`${num2} is big as compare ${num1}`);
+
+// }
+
+// let user  = +prompt('Enter Number ')
+// if (user %2 === 0) {
+//     console.log(`${user} is even Number`);
+    
+// }
+// else{
+//     console.log(`${user} is odd Number`);
+
+// }
+
+
+
+// let num1  = +prompt('Enter Number')
+// let num2  = +prompt('Enter Number')
+// let num3  = +prompt('Enter Number')
+
+// if (num1> num2 && num1>num3) {
+//     console.log(`number ${num1} is greater`);
+    
+// }
+// else if(num2>num1 && num2>num3){
+//     console.log(`number ${num2} is greater`);
+    
+// }
+// else if(num3>num1 && num3>num2){
+//     console.log(`number ${num3} is greater`);
+    
+// }
+
+
+
+// let year  =  prompt('Enter LEAP YEAR ')
+
+// if (year % 4 ===0 && year % 100 !==0 ) {
+//     console.log('leap year');
+    
+// }
+// else if (year %400 === 0) {
+//     console.log('leap year');
+    
+// } 
+// else console.log('no leap year');
+
+// let amount  = +prompt('Enter Your Amount ')
+// let paybleAmoumt = 0
+// if (amount>0 && amount<= 5000) {
+//     paybleAmoumt = amount
+// } else if(amount>5000 && amount<=7000){
+
+//     paybleAmoumt = amount - (5*amount)/100
+// }
+// else if(amount>7000 && amount<=9000){
+//     paybleAmoumt =  amount -  (10*amount)/100
+// }
+
+// else{
+//     paybleAmoumt = amount -  (20*amount)/100
+// }
+// console.log(paybleAmoumt  , " paybleamount");
+
+
+// let amount  = +prompt('Enter Your Amount ')
+// let dis = 0
+// if (amount>0 && amount<= 5000)  dis  = 0
+// else if(amount>5000 && amount<=7000) dis = 5
+// else if(amount>7000 && amount<=9000) dis = 10
+// else dis = 20
+// console.log(amount - (dis*amount)/100);
+
+let unit  = +prompt('Enter Your unit ')
+
+// let amount = 0
+//360
+if (unit>0 && unit<=100)  console.log(unit*4.2);
+else if(unit>100 && unit<=200){
+    console.log((100*4.2) + (unit-100)*6 );
+    
+} else if( unit>200 && unit<= 400){
+    console.log((100*4.2) + (100*6) + (unit-200)*8);
+    
+}else{
+    console.log((100*4.2) + (100*6) + (200*8) + (unit-400)*13);
+    
 }
 
-if (days) {
-    console.log("Number of days:", days);
-}
