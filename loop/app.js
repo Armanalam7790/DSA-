@@ -59,27 +59,27 @@
 
 //  let prompt  = require('prompt-sync')()
 
-var n  =  +prompt('Enter A Number : ')
+// var n  =  +prompt('Enter A Number : ')
 
 
 
-for (let i = 1; i <=10; i++) {
+// for (let i = 1; i <=10; i++) {
   
-    console.log(n*i);
+//     console.log(n*i);
     
     
-}
+// }
 
 //  let prompt  = require('prompt-sync')()
 
-var n  =  +prompt('Enter A Number : ')
+// var n  =  +prompt('Enter A Number : ')
 
-let sum = 0
-for (let i = 1; i <=n; i++) {
-    sum  = sum+ i
+// let sum = 0
+// for (let i = 1; i <=n; i++) {
+//     sum  = sum+ i
     
-}
-console.log(sum);
+// }
+// console.log(sum);
 
 //Q. Accept an integer and Print Hello world
 //Q. Print Natural Number Up to n.
@@ -93,39 +93,81 @@ console.log(sum);
 
 //  let prompt  = require('prompt-sync')()
 
-var a  =  +prompt('Enter A first number : ')
-var b  =  +prompt('Enter A second number : ')
-let evenSum = 0
-let oddSum = 0   
-if (a>b) {
-     var temp  = a
-     a = b
-    b  = temp
-}
+// var a  =  +prompt('Enter A first number : ')
+// var b  =  +prompt('Enter A second number : ')
+// let evenSum = 0
+// let oddSum = 0   
+// if (a>b) {
+//      var temp  = a
+//      a = b
+//     b  = temp
+// }
 
-for (let i = a; i <=b; i++) {
-   if (i%2 ===0){
-   evenSum =  evenSum+i
-   } 
+// for (let i = a; i <=b; i++) {
+//    if (i%2 ===0){
+//    evenSum =  evenSum+i
+//    } 
 
-   else oddSum =  oddSum+i
+//    else oddSum =  oddSum+i
     
-}
+// }
 
-console.log('evenSum', evenSum);
-console.log('oddSum', oddSum);
+// console.log('evenSum', evenSum);
+// console.log('oddSum', oddSum);
+
+
+
+//  let prompt  = require('prompt-sync')()
+
+// var n  =  +prompt('Enter A  number : ')
+
+// for (let i = 1; i <= n/2; i++) {
+//    if (n%i ===0) process.stdout.write(Number(i) + ' ')
+   
+    
+// }
+// console.log(n);
+
+
+
+
+//  let prompt  = require('prompt-sync')()
+
+// var n  =  +prompt('Enter A  number : ')
+// let count  = 0
+// for (let i = 0; i <=n; i++) {
+//     if (n%i===0) {
+//         count++
+//     }
+    
+// }
+
+// if (count == 2) console.log('prime number')
+//     else console.log('not prime number')
+
 
 
 
  let prompt  = require('prompt-sync')()
-
+let isPrime  = true
 var n  =  +prompt('Enter A  number : ')
+if (n<=1) console.log('not prime')
+else if (n == 2) console.log('prime number')
+else if (n%2== 0) console.log('not prime ')
 
-for (let i = 1; i <= n/2; i++) {
-   if (n%i ===0) process.stdout.write(Number(i) + ' ')
-   
-    
-}
-console.log(n);
+    else{
 
 
+        for (let i = 3; i < Math.floor(Math.sqrt(n)); i+=2) {
+           if (n%i == 0) {
+              isPrime = false
+              break
+           }
+            
+        }
+
+
+        console.log(isPrime ? 'not prime' : ' prime number');
+        
+
+    }
